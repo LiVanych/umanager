@@ -163,15 +163,15 @@ do_deleteuser() {
 
 do_help() {
 echo 
-echo "    \"Users Manager 0.1\" is a very simple Bash-script."
-echo "    It based on \"useradd\", \"userdel\" and \"newusers\" utilities from"
-echo "    \"passwd\" package (it truth for Debian-like Linux systems)."
-echo "    Creating text file for adding users from multiuser list, follow"
-echo "    to syntax of /etc/passwd file, as it says in man page of "newusers":"
+echo "    \"Users Manager 0.1\" is a very simple Bash script."
+echo "    It is based on \"useradd\", \"userdel\" and \"newusers\" utilities from"
+echo "    \"passwd\" package (it is true for Debian-like Linux systems)."
+echo "    To create text file for adding users from a multiuser list, follow"
+echo "    to syntax of /etc/passwd (explained man newusers):"
 echo 
 echo "    username:password:userid:groupid:gecos:/home/username:/bin/sh"
 echo 
-echo "    More help you can get from manual pages of programs listed above."
+echo "    You can get more information in man pages of programs listed above."
 echo                                 
 echo "                      Sample file for adding users:"
 echo                          
@@ -190,13 +190,13 @@ echo "    username03"
 echo "    ..."
 echo "    usernameXX "
 echo
-echo "                                TO DO"
+echo "                                TO-DO"
 echo
-echo "    1) Backup HOME_DIR of deleting users;"
-echo "    2) Choice of what will be remove from system after users deleting:"
-echo "       all users files, print jobs, cron jobs or/and at jobs;"
-echo "    3) Remove any SELinux user mapping for the deleting user's login;"
-echo "    4) Apply changes in the CHROOT_DIR directory and use the configuration"
+echo "    1) Backup HOME_DIR deleting users;"
+echo "    2) Ability for choose what will be removed from system when deleting users:"
+echo "       all user files, print jobs, cron jobs or/and at jobs;"
+echo "    3) Remove any SELinux user mappings for the user being deleting;"
+echo "    4) Apply changes in the CHROOT_DIR directory and use configuration"
 echo "       files from the CHROOT_DIR directory."  
 echo
 echo "    Li Vanych 2016, GNU GPL 3.0"
