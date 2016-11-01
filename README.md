@@ -1,14 +1,14 @@
-    "Users Manager 0.1" is a very simple Bash-script.
+    "Users Manager 0.1" is a very simple Bash script.
 
-    It based on "useradd", "userdel" and "newusers" utilities from
-    "passwd" package (it truth for Debian-like Linux systems).
+    It is based on "useradd", "userdel" and "newusers" utilities from
+    "passwd" package (it is true for Debian-like Linux systems).
 
-    Creating text file for adding users from multiuser list, follow
-    to syntax of /etc/passwd file, as it says in man of "newusers":
+    To create a text file for adding users from a multiuser list, follow
+    to syntax of /etc/passwd (explained in man newusers):
 
     username:password:userid:groupid:gecos:/home/username:/bin/sh
 
-    More help you can get from manual pages of programs listed above.
+    You can find more information in man pages of programs listed above.
 
                                Examples
                                 
@@ -28,14 +28,14 @@
     ...
     usernameXX
                                 
-                                TO DO
+                                TO-DO
 
-    1) Backup HOME_DIR before deleting of users;
+    1) Backup HOME_DIR before deleting users;
     
-    2) Choice what will be remove from system after users are deleted:
-       all users files, print jobs, cron jobs or/and at jobs;
+    2) Abillity for choose what will be removed from system when deleting
+       users: all user files, print jobs, cron jobs or/and at jobs;
        
-    3) Remove any SELinux user mapping for the deleting user's login;
+    3) Remove any SELinux user mappings for the user being deleted;
     
-    4) Apply changes in the CHROOT_DIR directory and use the configuration
+    4) Apply changes in the CHROOT_DIR directory and use configuration
        files from the CHROOT_DIR directory.
